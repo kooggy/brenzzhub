@@ -1,0 +1,28 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("BrenzzHub", "BloodTheme")
+local Main = Window:NewTab("Vehicle Legends")
+local MainSection = Main:NewSection("AutoFarm")
+MainSection :NewDropdown("AutoFarm", "AutoFarms credits for you", {"AutoFarm credits"}, function(currentOption)
+loadstring(game:HttpGet("https://pastebin.com/raw/0MqfXpvY", true))()
+end)
+local Main = Window:NewTab("Murder Mystery 2")
+local MainSection = Main:NewSection("Script")
+MainSection:NewDropdown("OP Gui", "OP gui for MM2", {"Fastest Autofarm Gui"}, function(currentOption)
+    getgenv().mainKey = "nil"
+
+local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+end)
+local Main = Window:NewTab("Muscle Legends")
+local MainSection = Main:NewSection("AutoFarm")
+MainSection:NewButton("GUI", "Autofarm gui for muscle legends", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/eiWMFDC3"))()
+    print("Clicked")
+end)
+local Player = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("Player")
+PlayerSection:NewSlider("Walkspeed", "Changes the walkspeed of your character", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+PlayerSection:NewSlider("JumpPower", "Changes the JumpPower of your character", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
